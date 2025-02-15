@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <h2>Dashboard</h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="upload-container">
+        <h3>Create a Post</h3>
+        <input type="file" id="fileInput" accept="image/*, video/*">
+        <textarea id="captionInput" placeholder="Write a caption..."></textarea>
+        <button onclick="postContent()">Post</button>
+    </div>
+
+    <div class="posts-container" id="postsContainer">
+        <h3>Recent Posts</h3>
+        <!-- Posts will be displayed here -->
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
